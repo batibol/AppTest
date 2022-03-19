@@ -12,5 +12,11 @@ pipeline{
                 sh 'mvn clean'
             }
         }
+        stage('Build')
+        {
+            steps {
+                echo 'This is the build phase'
+            }
+        }
     }
 }
